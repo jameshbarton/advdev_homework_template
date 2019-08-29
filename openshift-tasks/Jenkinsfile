@@ -54,12 +54,10 @@ podTemplate(
 
       // Using Maven run the unit tests
       stage('Unit Tests') {
-        steps {
-          echo "Running Unit Tests"
+        echo "Running Unit Tests"
 
-          // TBD: Execute Unit Tests
-          sh "${mvnCmd} test"
-        }
+        // TBD: Execute Unit Tests
+        sh "${mvnCmd} test"
       }
 
       // Using Maven to call SonarQube for Code Analysis
